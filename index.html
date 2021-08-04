@@ -122,7 +122,8 @@
                                     <input id="name" type="text" name="name" class="form-control">
                                 </div>
                                 <div class="form-group mb-4">
-                                    <button type="button" id="submit" class="btn btn-outline-success">Submit</button>
+                                    <button onclick="save_data(attendance_form.date.value, attendance_form.name.value)"
+                                        type="button" id="submit" class="btn btn-outline-success">Submit</button>
                                 </div>
                             </form>
                         </div>
@@ -134,8 +135,9 @@
                                 <div class="form-group mb-4">
                                     <label for="date2" class="form-label">Date</label>
                                     <div class="search_submit">
-                                        <input type="date" id="date2" name="date" class="form-control">
+                                        <input type="date" id="date2" name="date2" class="form-control">
                                         <button type="button" id="submit2"
+                                        onclick="save_data2(search_form.date2.value)"
                                             class="btn btn-outline-success">Submit</button>
                                     </div>
                                 </div>

@@ -16,14 +16,15 @@ nav_trigger.addEventListener('click',function(e){
 let dates = [];
 let names = [];
 
-let date = document.querySelector("#date").value;
-let name = document.querySelector("#name").value;
+// let date = document.querySelector("#date").value;
+// let name = document.querySelector("#name").value;
 let search_value = document.querySelector("#search_bar").value;
-let date_as_submit = document.querySelector("#date2").value;
+// let date_as_submit = document.querySelector("#date2").value;
 
 
+// document.getElementById("submit").addEventListener("click",function(){
 
-document.getElementById("submit").addEventListener("click",function(){
+function save_data(date, name){
     names = localStorage.getItem(date);
     
     if(names && names.length > 0){
@@ -42,11 +43,11 @@ document.getElementById("submit").addEventListener("click",function(){
         localStorage.setItem( date, JSON.stringify(names) );
     }
     make_list(date);
-})
+}
 
-document.getElementById("submit2").addEventListener("click", function(){
-    make_list(date_as_submit);
-})
+function save_data2(date){
+    make_list(date);
+}
 
 let list_copy = [];
 
