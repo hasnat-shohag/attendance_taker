@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Attendance Maker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="data:image/png;base64,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">
+
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="5000000">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+
+    <meta name="keywords" content="class one, html learn">
+    <meta name="description" content="you learn every things about html">
+    <meta name="author" content="mr abdul kuddus">
+    <meta name="copyrigth" content="www.mysite.com">
+    <meta name="revisit" content="5 days">
+
+    <meta property="og:title" content="html learn" />
+    <meta property="og:site_name" content="adfas" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://" />
+    <meta property="og:image" content="http://" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="http://">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/templete.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <main id="main_body">
+        <div class="top">
+            <div class="top_content top_content_body">
+
+                <div class="left">
+                    <a id="nav_trigger" class="nav_trigger" href="#">
+                        <i class="fa fa-bars"></i>
+                    </a>
+
+                </div>
+
+                <div class="mid">
+                    <form action="#">
+                        <input type="text" placeholder="search">
+                        <button type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="right">
+                    <a id="user_info" href="#">
+                        <i class="fa fa-user"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop_up">
+            <div id="pop_up_nav_links_body" class="pop_up_nav_links_body">
+                <ul class="pop_up_nav_links" id="pop_up_nav_links">
+                    <li>
+                        <i class="fa fa-user"></i>
+                        <a href="#">See your profile</a></li>
+
+                    <li>
+                        <i class="fa fa-cog"></i>
+                        <a href="#">Settings</a></li>
+                    <li>
+                        <i class="fa fa-sign-out"></i>
+                        <a href="#">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="toggle_body">
+            <div id="toggle">
+                <ul>
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-sign-out"></i> Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="app_content_body">
+                <div class="app_content">
+                    <div class="card m-2">
+                        <div class="card-body">
+                            <form action="" name="attendance_form">
+                                <div class="form-group mb-4">
+                                    <label for="" class="form-label">Date</label>
+                                    <input id="date" type="date" name="date" class="form-control">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="" class="form-label">Name</label>
+                                    <input id="name" type="text" name="name" class="form-control">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <button type="button" id="submit" class="btn btn-outline-success">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card mt-3 mx-2">
+                        <div class="card-body">
+                            <form action="" name="search_form">
+                                <div class="form-group mb-4">
+                                    <label for="date2" class="form-label">Date</label>
+                                    <div class="search_submit">
+                                        <input type="date" id="date2" name="date" class="form-control">
+                                        <button type="button" id="submit2"
+                                            class="btn btn-outline-success">Submit</button>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <input id="search_bar" type="text" name="search_key"
+                                        onkeyup="search(search_form.search_key.value)" placeholder="search"
+                                        class="form-control">
+                                </div>
+                            </form>
+
+                            <ul class="list-group mt-4" id="attandance_list">
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom_content">
+                <ul class="nav_links">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-tasks"></i>
+                            <span>Tasks</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-bell"></i>
+                            <span>Alerts</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

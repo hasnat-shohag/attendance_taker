@@ -1,0 +1,6 @@
+.search_submit{
+    display: flex;
+}
+.search_submit button{
+    margin-left: 5px;;
+}
