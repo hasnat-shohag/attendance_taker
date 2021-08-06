@@ -18,7 +18,6 @@ let names = [];
 
 // let date = document.querySelector("#date").value;
 // let name = document.querySelector("#name").value;
-let search_value = document.querySelector("#search_bar").value;
 // let date_as_submit = document.querySelector("#date2").value;
 
 
@@ -72,10 +71,8 @@ function make_list(date) {
 
 
 function search(params) {
-    // console.log(params);
-        if(search_value === ""){
-            document.getElementById('attandance_list').innerHTML = list_copy;
-        }
+
+        document.getElementById('attandance_list').innerHTML = list_copy;
         if(names.includes(params)){
             let data = names[names.indexOf(params)];
             list = `<li class="list-group-item">postion:${names.indexOf(params)+1} <br> <br> ${data}</li>`;
